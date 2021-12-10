@@ -1,6 +1,4 @@
-#set the threshold (effective or not effective)
-#threshold = 0
-#tissues = ["breast", "colon", "prostate"]
+
 
 import pandas as pd
 import numpy as np
@@ -8,13 +6,7 @@ import csv
 from itertools import chain
 import os
 
-'''
-#cd the current directory
-os.chdir('../')
-outDir = os.getcwd()
-dataDir = outDir +"/data/"
-matrixDir = outDir +"/matrix/"
-'''
+
 
 
 
@@ -60,7 +52,7 @@ def specific_zero_one_matrix(df,tissues,threshold, matrixDir):
     csv_path = matrixDir+name + '_zero_one_matrix.csv'
     return bin_df, csv_path
 
-#specific_zero_one_matrix(tissues)
+
 
 
 
